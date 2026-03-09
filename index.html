@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="utf-8">
+    <title>Jocuri Aburite</title>
+    <meta name="author" content="Litu Bogdan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jocuri Aburite - cele mai bune oferte la cele mai tari jocuri.">
+    <meta name="keywords"
+        content="jocuri, Jocuri Aburite, jocuri ieftine, DLC, conturi cu jocuri, oferte jocuri, conturi ieftine">
+
+    <link rel="icon" type="image/png" href="./resurse/imagini/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./resurse/imagini/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./resurse/imagini/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./resurse/imagini/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Jocuri Aburite" />
+    <link rel="manifest" href="./resurse/imagini/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="./resurse/css/general.css">
+    <link rel="stylesheet" href="./resurse/css/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="meniu">
+                <li>Magazin
+                    <ul>
+                        <li><a href="#welcome">Welcome</a></li>
+                        <li><a href="#promotii">Promotii</a></li>
+                        <li><a href="#produse">Produse</a></li>
+                        <li><a href="#anunturi">Anunturi</a></li>
+                        <li><a href="#index-intrebari">Întrebări</a></li>
+                        <li><a href="#trailere">Trailere</a></li>
+                    </ul>
+                </li>
+                <li>Profil
+                    <ul>
+                        <li><a href="#despre-profil">Despre</a></li>
+                        <li><a href="#statistici-profil">Statistici</a></li>
+                        <li><a href="#tranzactii-profil">Tranzacții</a></li>
+                    </ul>
+                </li>
+                <li><a href="#wishlist">Wishlist</a></li>
+                <li>Coș
+                    <ul>
+                        <li><a href="#continut-cos">Conținut</a></li>
+                        <li><a href="#plata-cos">Plătește</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <h1 class="ephesis">Jocuri Aburite</h1>
+        <img src="./resurse/imagini/map.png" alt="Mapa Navigare" usemap="#map-navigare" width="640" height="640"/>
+
+        <!--coordonatele din area stabilite cu ajutorul GIMP. imagine luata de pe pixabay-->
+        <map name="map-navigare">
+            <area shape="rect" coords="135,170,500,365" href="#promotii" alt="area produse">
+            <area shape="rect" coords="450,440,615,500" href="#statistici-profil" alt="area statistici">
+            <area shape="rect" coords="40,365,145,500" href="#continut-cos" alt="area cos">
+        </map>
+        
+    </header>
+    <main> <!--  comentariu -->
+        <div id="grid-pagina">
+            <section id="welcome">
+                <hgroup>
+                    <h2>Bine ați venit pe Jocuri Aburite!</h2>
+                    <p class="subtitlu">Rău ați nimerit (pentru buzunarul dumneavoastră).</p>
+                </hgroup>
+
+                <p class="intro">
+                    Aici găsiți cele mai bune oferte la jocuri, DLC-uri și conturi cu jocuri!<br>
+                    Poate vă întrebați: la ce îmi folosesc aceste oferte la jocuri? De ce m-aș juca? Avem răspunsul!
+                </p>
+                
+                <object data="./resurse/pdf/Benefits-of-Gaming.pdf" type="application/pdf" width="500" height="400" title="Beneficiile jocurilor">
+                    <p>
+                        Browser-ul tău nu poate afișa obiecte de tip pdf! Descarcă-l mai jos.<br>
+                    </p>
+                </object>
+                <br>
+                <a href="./resurse/pdf/Benefits-of-Gaming.pdf" download="Beneficiile_jocurilor.pdf">Descarcă PDF cu beneficiile jocurilor</a>
+                <br>
+                <div class="intro-oferte">
+                    <div>Jocuri populare</div>
+                    <div>Jocuri de strategie</div>
+                    <div>Oferte jocuri de neratat</div>
+                    <div>Jocuri ieftine (și bune)</div>
+                    <div>DLC-uri pentru tine</div>
+                </div>
+                <p class="anunt intro">Vă puteți bucura de jocurile dumneavoastră de îndată ce ați finalizat tranzacția.
+                </p>
+                <div id="dv-prezentare-1">
+                    <div id="dv-prezentare">
+                        <figure>
+                            <picture title="Imagine discount">
+                                <!-- il ia pe primul care se potriveste cu query-ul din media-->
+                                <source srcset="./resurse/imagini/discount-150x150.jpg" media="(max-width:700px)" />
+                                <source srcset="./resurse/imagini/discount-330x330.jpg" media="(max-width:1200px)" />
+                                <img src="./resurse/imagini/discount-640x640.jpg" alt="Discount cu zaruri 3D" />
+                            </picture>
+                            <figcaption>Discount</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <section id="promotii"> <!--  este integrat -->
+                <h2>Promoții și oferte de neratat</h2>
+                <a href="./resurse/imagini/sale-1280x1280.jpg" target="_self">
+                    <figure>
+                        <picture title="Imagine reducere">
+                            <source srcset="./resurse/imagini/sale-150x150.jpg" media="(max-width:700px)" />
+                            <source srcset="./resurse/imagini/sale-330x330.jpg" media="(max-width:1200px)" />
+                            <img src="./resurse/imagini/sale-640x640.jpg" alt="text" />
+                        </picture>
+                        <figcaption>Reduceri si promotii</figcaption>
+                    </figure>
+                </a>
+                <article> <!--  de sine statator -->
+                    <h3 class="titlu">Super ofertă de la furnizorul Valve</h3>
+                    <p><b>Valve</b> oferă <b>reduceri de <s>10%</s> <ins>15%</ins></b> pentru toate jocurile sale!</p>
+                    <p>Oferta este valabilă până la data de <time datetime="2026-07-10"> 10 iulie 2026</time> doar pe
+                        site-ul <abbr title="Jocuri Aburite">JA</abbr>.</p>
+                    <p>În cazul în care cumpărați mai mult de două <b>jocuri Valve</b>, primiți bonus 5% puncte de
+                        fidelitate la finalizarea tranzacției!</p>
+                </article>
+                <article>
+                    <h3>Ofertă pachet joc + DLC</h3>
+                    <p>Jocuri Aburite oferă următoarele beneficii la achiziționarea, în același timp, a unui joc și DLC
+                        pentru acesta:</p>
+                    <ol>
+                        <li><i lang="en">eternal swag</i>;</li>
+                        <li><s>3%</s> <ins>10%</ins> din valoarea tranzacției ca puncte de fidelitate;</li>
+                        <li>0.33% reducere din prețul total.</li>
+                    </ol>
+
+                </article>
+                <article>
+                    <h3>Ofertă la achiziția mai multor copii ale aceluiași joc</h3>
+                    <p>Vrei să faci un cadou? Te putem ajuta!</p>
+                    <p>Nu ai nevoie de o sărbătoare ca să oferi cuiva drag un joc (pe care ți-l dorești și tu), așa că
+                        îți oferim:</p>
+                    <ol>
+                        <li>0.09% * X reducere din prețul total (X reprezintă numărul de copii, 2 &le; X &le; 4);</li>
+                        <li><s>3%</s> <ins>6%</ins> din valoarea tranzacției ca puncte de fidelitate, pentru fiecare
+                            utilizator în parte! (detalii la finalizarea tranzacției).</li>
+                    </ol>
+
+                </article>
+            </section>
+            <section id="produse">
+                <h2>Produsele noastre</h2>
+                <p>Vă oferim o multitudine de oportunități de a omorî atât timpul, cât și monștrii! (din joc).</p>
+                <section>
+                    <h3>Licențe pentru jocuri</h3>
+                    <blockquote><q>Joaca este începutul cunoaşterii.</q><br>George Dorsey</blockquote>
+                    <p>Dacă vreți să faceți o colecție impresionantă pe același cont de pe o anumită platformă, asta
+                        este soluția!</p>
+                    <p>Categorii:</p>
+                    <ul>
+                        <li>de strategie</li>
+                        <li>FPS</li>
+                        <li>TPS</li>
+                        <li>roguelike</li>
+                        <li>turn-based</li>
+                        <li>RTS</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>DLC-uri pentru jocuri</h3>
+                    <p>Dacă ai terminat conținutul de bază al jocului preferat, s-ar putea să găsești aici o metodă de a
+                        prelungi experiența.</p>
+                    <p>Pont: fii prevăzător și cumpără deodată și jocul, și DLC-ul! (vezi promoții)</p>
+                </section>
+
+                <section>
+                    <h3>Conturi cu jocuri</h3>
+                    <p>Vrei să reduci din costuri și nu te interesează să ai o librărie gigantică pe același cont? Ai
+                        noroc! Profită de reduceri ce ajung și la 90%!</p>
+                </section>
+            </section>
+            <section id="showcase">
+                <h2>Cele mai populare</h2>
+                <table id="tab-showcase">
+                    <caption>Jocurile care se vând ca pâinea caldă!</caption>
+                    <thead>
+                        <tr>
+                            <th>Index</th>
+                            <th>Titlu</th>
+                            <th><i>Developer/Publisher</i></th>
+                            <th>Scor</th>
+                            <th>Preț</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1.</td>
+                            <td>Counter-Strike 2</td>
+                            <td>Valve</td>
+                            <td><meter min="0" max="10" value="8.5" low = "5" optimum = "8">8.5 din 10</meter></td>
+                            <td>13&euro;</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>Slay the Spire 2</td>
+                            <td>Mega Crit</td>
+                            <td><meter min="0" max="10" value="9.7" low = "5" optimum = "8">9.7 din 10</meter></td>
+                            <td>23&euro;</td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>ARC Raiders</td>
+                            <td>Embark Studios</td>
+                            <td><meter min="0" max="10" value="8" low = "5" optimum = "8">8 din 10</meter></td>
+                            <td rowspan="2" class="span-mare">40&euro;</td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>Rust</td>
+                            <td>Facepunch Studios</td>
+                            <td><meter min="0" max="10" value="8.6" low = "5" optimum = "8">8.6 din 10</meter></td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td>Resident Evil Requiem</td>
+                            <td>Capcom</td>
+                            <td><meter min="0" max="10" value="9.6" low = "5" optimum = "8">9.6 din 10</meter></td>
+                            <td>70&euro;</td>
+                        </tr>
+                        <tr>
+                            <td>6.</td>
+                            <td>Marathon</td>
+                            <td>Bungie</td>
+                            <td><meter min="0" max="10" value="9" low = "5" optimum = "8">9 din 10</meter></td>
+                            <td>40&euro;</td>
+                        </tr>
+                        <tr>
+                            <td>7.</td>
+                            <td>EA SPORTS FC 26</td>
+                            <td>EA Romania</td>
+                            <td><meter min="0" max="10" value="4.7" low = "5" optimum = "8">4.7 din 10</meter></td>
+                            <td>70&euro;</td>
+                        </tr>
+                        <tr>
+                            <td>8.</td>
+                            <td>Grand Theft Auto V</td>
+                            <td>Rockstar North</td>
+                            <td><meter min="0" max="10" value="7.8" low = "5" optimum = "8">7.8 din 10</meter></td>
+                            <td>30&euro;</td>
+                        </tr>
+                        <tr>
+                            <td>9.</td>
+                            <td>Mewgenics</td>
+                            <td>Edmund McMillen, Tyler Glaiel</td>
+                            <td><meter min="0" max="10" value="9.1" low = "5" optimum = "8">9.1 din 10</meter></td>
+                            <td>29&euro;</td>
+                        </tr>
+                        <tr>
+                            <td>10.</td>
+                            <td>Satisfactory</td>
+                            <td>Coffee Stain Studios</td>
+                            <td><meter min="0" max="10" value="9.6" low = "5" optimum = "8">9.6 din 10</meter></td>
+                            <td>39&euro;</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="5">Și multe altele, descoperă-le în oferta completă!</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <figure id="fig1" class="fg-img">
+                <img src="resurse/imagini/favicon/favicon-96x96.png" alt="logo">
+                <figcaption>logo</figcaption>
+            </figure>
+            <figure id="fig2" class="fg-img">
+                <img src="resurse/imagini/favicon/favicon-96x96.png" alt="logo">
+                <figcaption>logo</figcaption>
+            </figure>
+            <figure id="fig3" class="fg-img">
+                <img src="resurse/imagini/favicon/favicon-96x96.png" alt="logo">
+                <figcaption>logo</figcaption>
+            </figure>
+            <section id="anunturi">
+                <h2>Anunțuri</h2>
+                <p><time datetime="2026-02-27">27 februarie 2026</time>: <b>Înființare</b> - a luat naștere acest site.
+                </p>
+                <p><time datetime="2026-03-02">2 martie 2026</time>: <b>Modificări majore</b> - am adăugat css.</p>
+                <p><time datetime="2026-03-08">8 martie 2026</time>: <b>Finalizare etapa 1</b> - am mai modificat și adăugat cerințe lipsă, bonusuri.</p>
+            </section>
+            <section id="index-intrebari">
+                <h2>Întrebări frecvente</h2>
+                <details>
+                    <summary>Produsele dumneavoastră provoacă dependență?</summary>
+                    <p>Categoric!</p>
+                </details>
+                <details>
+                    <summary>Produsele dumneavoastră provoacă tristețe incomensurabilă atunci când ne gândim cât am
+                        cheltuit?</summary>
+                    <p>Absolut!</p>
+                </details>
+                <details>
+                    <summary>Produsele dumneavoastră provoacă trăiri puternice, posibil prin atașarea sentimentală de
+                        personaje fictive?</summary>
+                    <p>Se prea poate.</p>
+                </details>
+                <details>
+                    <summary>Sunteți cumva asociați cu <a href="https://store.steampowered.com/" target="_blank"
+                            rel="noopener noreferrer">Steam</a>?</summary>
+                    <p>Ne rezervăm dreptul de a nu răspunde la această întrebare; mulțumim pentru înțelegere!</p>
+                </details>
+                <details>
+                    <summary>Ce părere aveți despre concurență?</summary>
+                    <p>
+                        Una foarte proastă: 
+                        <a href="https://steamcommunity.com/discussions/forum/7/592889669725721487#comment_content_592889669725722018"
+                            target="_blank" rel="noopener noreferrer">
+                            https://steamcommunity.com/discussions/forum/7/<wbr>592889669725721487#comment_content_592889669725722018
+                        </a>
+                    </p>
+                </details>
+
+            </section>
+
+        </div>
+        <section id="trailere">
+            <h2>Trailere</h2>
+            <p>Câteva trailere pentru cele mai bune jocuri de pe piață!</p>
+            <div class="container-iframe">
+                <div class="taburi-iframe">
+                    <a href="https://www.youtube.com/embed/DMXWKpZH7pw" target="ifr-video">The Day Before -
+                        Trailer</a>
+                    <a href="https://www.youtube.com/embed/rh6Pi6h_css" target="ifr-video">Highguard -
+                        Trailer</a>
+                    <a href="https://www.youtube.com/embed/mBnStS9d2xg" target="ifr-video">Concord -
+                        Trailer</a><br />
+                </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/DMXWKpZH7pw" name="ifr-video"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p>Bine, și acum pe bune cele mai șmechere trailere.</p>
+            <div class="container-iframe">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed?listType=playlist&list=PLnxaxk1JJXBDmtblIj8eEGFSfVSPpwK7A" name="ifr-video"
+                    title="YouTube playlist player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section id="profil">
+            <h2>Profil</h2>
+
+            <article id="despre-profil">
+                <h3>Despre</h3>
+                <p class="intro">Aici vei putea să vezi detaliile despre profilul tău, cum ar fi datele de logare și preferințele!</p>
+            </article>
+
+            <article id="statistici-profil">
+                <h3>Statistici</h3>
+                <p class="intro">Aici vei putea să vezi statisticile rezultate în urma folosirii acestui site web, precum grafice cu <wbr>
+                sumele cheltuite în funcție de lună, subtotaluri pe perioade determinate, etc.</p>
+
+                <p>De exemplu, se vor afișa rezultatele următoarelor formule:</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                    <mtext>Total cheltuit:</mtext>
+                    <mspace width="0.5em" />
+                    <mrow>
+                        <mi>t</mi><mo>=</mo>
+                        <mrow>
+                            <mo>&sum;</mo>
+                            <msub>
+                                <mi>C</mi>
+                                <mrow><mi>i</mi></mrow>
+                            </msub>
+                        </mrow>
+                    </mrow>
+                    <mspace width="0.5em"/>
+                    <mtext>unde</mtext>
+                    <mspace width="0.5em"/>
+                    <mrow>
+                        <msub>
+                        <mi>C</mi>
+                        <mrow><mi>i</mi></mrow>
+                        </msub>
+                        <mo>&isin;</mo>
+                        <mrow>
+                            <mo>{</mo>
+                                <msub>
+                                <mi>C</mi>
+                                <mrow><mi>1</mi></mrow>
+                                </msub>
+                                <mo>,</mo>
+                                <msub>
+                                <mi>C</mi>
+                                <mrow><mi>2</mi></mrow>
+                                </msub>
+                                <mo>,</mo>
+                                <mo>...</mo>
+                                <mo>,</mo>
+                                <msub>
+                                <mi>C</mi>
+                                <mrow><mi>n</mi></mrow>
+                                </msub>
+                            <mo>}</mo>
+                        </mrow>
+                    </mrow>
+                    <mspace width="0.5em"/>
+                    <mtext>mulțimea costurilor și</mtext>
+                    <mspace width="0.5em"/>
+                    <mrow>
+                        <mi>n</mi>
+                        <mo>=</mo>
+                        <ms>numărul de articole cumpărate.</ms>
+                    </mrow>
+                </math>
+                <!-- nu merge <mspace linebreak="newline"/>, asa ca fac <math> separat pentru o noua formula-->
+                <br>
+                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                    <mtext>Cost mediu:</mtext>
+                    <mspace width="0.5em" />
+                    <mrow>
+                        <msub>
+                            <mi>C</mi>
+                            <mrow><mi>mediu</mi></mrow>
+                        </msub>
+                        <mo>=</mo>
+                        <mfrac>
+                            <mi>t</mi>
+
+                            <mi>n</mi>
+                        </mfrac>
+                        
+                    </mrow>
+                    <mspace width="0.5em"/>
+                    <mtext>unde</mtext>
+                    <mspace width="0.5em"/>
+                    <mrow>
+                        <mi>t</mi>
+                        <mo>=</mo>
+                        <mrow>
+                            <mo>&sum;</mo>
+                            <msub>
+                                <mi>C</mi>
+                                <mrow><mi>i</mi></mrow>
+                            </msub>
+                        </mrow>
+                        <mspace width="0.5em"/>
+                        <mtext>,</mtext>
+                        <mspace width="0.5em"/>
+                        <msub>
+                        <mi>C</mi>
+                        <mrow><mi>i</mi></mrow>
+                        </msub>
+                        <mo>&isin;</mo>
+                        <mrow>
+                            <mo>{</mo>
+                                <msub>
+                                <mi>C</mi>
+                                <mrow><mi>1</mi></mrow>
+                                </msub>
+                                <mo>,</mo>
+                                <msub>
+                                <mi>C</mi>
+                                <mrow><mi>2</mi></mrow>
+                                </msub>
+                                <mo>,</mo>
+                                <mo>...</mo>
+                                <mo>,</mo>
+                                <msub>
+                                <mi>C</mi>
+                                <mrow><mi>n</mi></mrow>
+                                </msub>
+                            <mo>}</mo>
+                        </mrow>
+                    </mrow>
+                    <mspace width="0.5em"/>
+                    <mtext>mulțimea costurilor și</mtext>
+                    <mspace width="0.5em"/>
+                    <mrow>
+                        <mi>n</mi>
+                        <mo>=</mo>
+                        <ms>numărul de articole cumpărate.</ms>
+                    </mrow>
+                </math>
+            </article>
+
+            <article id="tranzactii-profil">
+                <h3>Tranzacții</h3>
+                <p class="intro">Tranzacțiile efectuate de-a lungul timpului.</p>
+            </article>  
+        </section>
+        <section id="wishlist">
+            <h2>Wishlist</h2>
+
+            <p class="intro">În acest loc vei putea să îți gestionezi lista cu jocurile marcate pe care ți le dorești.</p>
+        </section>
+        <section id="cos">
+            <h2>Coș</h2>
+            <article id="continut-cos">
+                <h3>Conținut</h3>
+                <p class="intro">Ce ai adăugat în coș și câteva detalii despre acele produse.</p>
+            </article>
+            <article id="plata-cos">
+                <h3>Plată</h3>
+                <p class="intro">Totalul, metodele de plată, punctul în care trebuie să îți cântărești deciziile.</p>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <a href="#" title="mergi sus" id="link-top">Link SUS</a> <i class="fa-brands fa-42-group"></i>
+        <address>
+            <br>
+            <a href="tel:+40711234567">Sună la +40711234567</a>
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.8842997291954!2d26.0995867!3d44.4355355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff472f47f047%3A0x493984726f0235f9!2sFaculty%20of%20Mathematics%20and%20Computer%20Science!5e0!3m2!1sen!2sro!4v1773071778325!5m2!1sen!2sro" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="ifr-harta"></iframe>
+            <a href="https://maps.app.goo.gl/MCVRB9RrMip6CBUG8" target="_blank">
+                Vizitează sediul - Strada Academiei 14, 010014, București
+            </a>
+            <br>
+            <a href="mailto:jean.lipici@gmail.com">Dă-ne un mail</a>
+            <br>
+            <a href="https://wa.me/40711234567" target="_blank">Scrie-ne pe Whatsapp</a>
+            <br>
+        </address>
+        <p><small>Copyright &copy; <time datetime="2026-02-27">27 Februarie 2026</time> - Litu Bogdan</small></p>
+    </footer>
+</body>
+
+</html>
