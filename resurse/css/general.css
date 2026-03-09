@@ -1,0 +1,169 @@
+body {
+    --culoare-fundal: lightgray;
+    --culoare-contur: goldenrod;
+    --margine-pagina: 100px;
+    background-color: var(--culoare-fundal);
+}
+
+main {
+    margin-left: var(--margine-pagina);
+    margin-right: var(--margine-pagina);
+}
+
+p {
+    border: 1px solid var(--culoare-fundal);
+}
+
+#grid-pagina {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-areas: "welcome welcome welcome"
+                        "promotii promotii anunturi"
+                        "fig1 showcase showcase"
+                        "fig2 showcase showcase"
+                        "fig3 showcase showcase"
+                        "produse produse produse"
+                        "index-intrebari index-intrebari index-intrebari";
+
+}
+
+#grid-pagina > * {
+    border: 1px solid var(--culoare-contur);
+    box-shadow: 0px 0px 5px var(--culoare-contur);
+    padding: 10px;
+}
+
+/* slide 49 - unitati de masura relative */
+
+figure { /* resetare spatiere */
+    margin: 0;
+}
+
+figure > img {
+    width: 100%;
+}
+
+figure > picture {
+    width: 100%;
+}
+
+.ephesis {
+  font-family: "Ephesis", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+#welcome{
+    grid-area: welcome;
+}
+#promotii{
+    grid-area: promotii;
+}
+#anunturi{
+    grid-area: anunturi;
+}
+#showcase{
+    grid-area: showcase;
+}
+ 
+#fig1{
+    grid-area: fig1;
+}
+#fig2{
+    grid-area: fig2;
+}
+#fig3{
+    grid-area: fig3;
+}
+#produse{
+    grid-area: produse;
+}
+#index-intrebari{
+    grid-area: index-intrebari;
+}
+#trailere{
+    grid-area: trailere;
+}
+
+.taburi-iframe > a {
+    display: inline-block;
+    padding: 10px;
+    background-color: var(--culoare-fundal);
+    border: 1px solid var(--culoare-contur);
+    color: black;
+    text-decoration: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: all 250ms;
+}
+
+.container-iframe {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.taburi-iframe {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: stretch;
+}
+
+.taburi-iframe > a:hover {
+    background-color: var(--culoare-contur);
+    color: white;
+}
+
+#tab-showcase {
+    border-collapse:collapse;
+}
+
+#tab-showcase td, th{
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+}
+
+/*culori alternate*/
+#tab-showcase tbody tr:nth-child(even) {
+    background-color: lightgoldenrodyellow;
+}
+
+#tab-showcase .span-mare {
+    background-color: blueviolet;
+}
+
+
+@media screen and (max-width:1200px) {
+    
+    body {
+        --margine-pagina: 150px;
+    }
+
+    #grid-pagina {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "welcome welcome"
+                        "promotii promotii"
+                        "anunturi anunturi"
+                        "fig1 showcase"
+                        "fig2 showcase"
+                        "fig3 showcase"
+                        "produse produse"
+                        "index-intrebari index-intrebari";
+
+}
+}
+
+@media  screen and (max-width:700px) {
+    
+    body {
+        --margine-pagina: 50px;
+    }
+
+    #grid-pagina {
+        display: block  ;
+    }
+}
