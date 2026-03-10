@@ -1,17 +1,84 @@
 body {
-    --culoare-fundal: lightgray;
-    --culoare-contur: goldenrod;
+    --culoare-fundal: #005C8A;
+    --culoare-contur: #00058A;
+    --culoare-text: white;
+    --culoare-link-normal: lightgray;
+    --culoare-link-hover: white;
+    --culoare-contur-card: #80FFD6;
+    --culoare-card: #008A5E;
+    --culoare-text-card: white;
+    --culoare-text-buton: black;
+    --culoare-buton-adaugare-cos: #80FDFF;
+    --culoare-buton-adaugare-cos-hover: #80FFD6;
+    --culoare-buton-wishlist: #8084FF;
+    --culoare-buton-wishlist-hover: #80ACFF;
+
     --margine-pagina: 100px;
+
+    --latime-buton: 100px;
+    --inaltime-buton: 35px;
+    --latime-buton-adaugare-cos: 100px;
+    --inaltime-buton-adaugare-cos: 35px;
+    --latime-buton-wishlist: 50px;
+    --inaltime-buton-wishlist: 35px;
+
     background-color: var(--culoare-fundal);
+    color: var(--culoare-text);
 }
+
+a {
+    color: var(--culoare-link-normal);
+    text-decoration: none;
+    transition: color 250ms linear;
+}
+
+a:hover {
+    color: var(--culoare-link-hover);
+}
+
+.card {
+    background-color: var(--culoare-card);
+    color: var(--culoare-text-card);
+    border: 3px solid var(--culoare-contur-card);
+    box-shadow: 0px 0px 5px var(--culoare-contur);
+    padding: 10px;
+}
+
+.buton-wishlist {
+    display: inline-block;
+    background-color: var(--culoare-buton-wishlist);
+    color: var(--culoare-text-buton);
+    border: 1px solid var(--culoare-contur);
+    padding: 0px;
+    transition: all 250ms linear;
+    width: var(--latime-buton-wishlist);
+    height: var(--inaltime-buton-wishlist);
+    text-align: center;
+}
+
+.buton-wishlist:hover {
+    background-color: var(--culoare-buton-wishlist-hover);
+}
+
+.buton-adaugare-cos {
+    display: inline-block;
+    background-color: var(--culoare-buton-adaugare-cos);
+    color: var(--culoare-text-buton);
+    border: 1px solid var(--culoare-contur);
+    padding: 0px;
+    transition: all 250ms linear;
+    width: var(--latime-buton-adaugare-cos);
+    height: var(--inaltime-buton-adaugare-cos);
+    text-align: center;
+}
+
+.buton-adaugare-cos:hover {
+    background-color: var(--culoare-buton-adaugare-cos-hover);
+}   
 
 main {
     margin-left: var(--margine-pagina);
     margin-right: var(--margine-pagina);
-}
-
-p {
-    border: 1px solid var(--culoare-fundal);
 }
 
 #grid-pagina {

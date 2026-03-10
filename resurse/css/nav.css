@@ -1,6 +1,5 @@
 nav {
-    --latime-buton: 100px;
-    --inaltime-buton: 35px;
+    
     background-color: var(--culoare-contur);
 }
 
@@ -20,7 +19,8 @@ ul.meniu, ul.meniu ul {
 
 ul.meniu {
     display: flex;  
-    position: relative; 
+    position: relative;
+    color: white;
 }
 
 ul.meniu ul {
@@ -71,7 +71,7 @@ ul.meniu li {
     height: var(--inaltime-buton);
     background-color: var(--culoare-fundal);
     border: 1px solid var(--culoare-contur);
-    color: black;
+    color: var(--culoare-link-normal);
     text-align: center;
     line-height: var(--inaltime-buton);
     text-decoration: none;
@@ -81,7 +81,6 @@ ul.meniu li {
 
 ul.meniu li a {
     display: block;
-    color:black;
     text-decoration: none;
     transition: all 250ms linear;
     width: 100%;
@@ -90,10 +89,9 @@ ul.meniu li a {
 
 ul.meniu li:hover, ul.meniu li:hover .text-icon a { /*trebuie suprascrisa proprietatea subelementului*/
     background-color: var(--culoare-contur);
-    color: white !important;
+    color : var(--culoare-link-hover);
 }
 
 ul.meniu > li a:hover {
     background-color: var(--culoare-contur);
-    color: white;
 }
