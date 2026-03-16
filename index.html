@@ -18,6 +18,8 @@
     <link rel="manifest" href="./resurse/imagini/favicon/site.webmanifest" />
     <link rel="stylesheet" href="./resurse/css/general.css">
     <link rel="stylesheet" href="./resurse/css/nav.css">
+    <link rel="stylesheet" href="./resurse/css/tab-showcase.css">
+    <link rel="stylesheet" href="./resurse/css/iframe-trailer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -119,7 +121,7 @@
                     </div>
                 </div>
             </section>
-            <section id="promotii"> <!--  este integrat -->
+            <section id="calendar-promotii"> <!--  este integrat -->
                 <h2>Promoții și oferte de neratat</h2>
                 <a href="./resurse/imagini/sale-1280x1280.jpg" target="_self">
                     <figure>
@@ -195,97 +197,100 @@
                 </section>
             </section>
             <section id="showcase">
-                <h2>Cele mai populare</h2>
-                <table id="tab-showcase">
-                    <caption>Jocurile care se vând ca pâinea caldă!</caption>
-                    <thead>
-                        <tr>
-                            <th>Index</th>
-                            <th>Titlu</th>
-                            <th><i>Developer/Publisher</i></th>
-                            <th>Scor</th>
-                            <th>Preț</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1.</td>
-                            <td>Counter-Strike 2</td>
-                            <td>Valve</td>
-                            <td><meter min="0" max="10" value="8.5" low = "5" optimum = "8">8.5 din 10</meter></td>
-                            <td>13&euro;</td>
-                        </tr>
-                        <tr>
-                            <td>2.</td>
-                            <td>Slay the Spire 2</td>
-                            <td>Mega Crit</td>
-                            <td><meter min="0" max="10" value="9.7" low = "5" optimum = "8">9.7 din 10</meter></td>
-                            <td>23&euro;</td>
-                        </tr>
-                        <tr>
-                            <td>3.</td>
-                            <td>ARC Raiders</td>
-                            <td>Embark Studios</td>
-                            <td><meter min="0" max="10" value="8" low = "5" optimum = "8">8 din 10</meter></td>
-                            <td rowspan="2" class="span-mare">40&euro;</td>
-                        </tr>
-                        <tr>
-                            <td>4.</td>
-                            <td>Rust</td>
-                            <td>Facepunch Studios</td>
-                            <td><meter min="0" max="10" value="8.6" low = "5" optimum = "8">8.6 din 10</meter></td>
-                        </tr>
-                        <tr>
-                            <td>5.</td>
-                            <td>Resident Evil Requiem</td>
-                            <td>Capcom</td>
-                            <td><meter min="0" max="10" value="9.6" low = "5" optimum = "8">9.6 din 10</meter></td>
-                            <td>70&euro;</td>
-                        </tr>
-                        <tr>
-                            <td>6.</td>
-                            <td>Marathon</td>
-                            <td>Bungie</td>
-                            <td><meter min="0" max="10" value="9" low = "5" optimum = "8">9 din 10</meter></td>
-                            <td>40&euro;</td>
-                        </tr>
-                        <tr>
-                            <td>7.</td>
-                            <td>EA SPORTS FC 26</td>
-                            <td>EA Romania</td>
-                            <td><meter min="0" max="10" value="4.7" low = "5" optimum = "8">4.7 din 10</meter></td>
-                            <td>70&euro;</td>
-                        </tr>
-                        <tr>
-                            <td>8.</td>
-                            <td>Grand Theft Auto V</td>
-                            <td>Rockstar North</td>
-                            <td><meter min="0" max="10" value="7.8" low = "5" optimum = "8">7.8 din 10</meter></td>
-                            <td>30&euro;</td>
-                        </tr>
-                        <tr>
-                            <td>9.</td>
-                            <td>Mewgenics</td>
-                            <td>Edmund McMillen, Tyler Glaiel</td>
-                            <td><meter min="0" max="10" value="9.1" low = "5" optimum = "8">9.1 din 10</meter></td>
-                            <td>29&euro;</td>
-                        </tr>
-                        <tr>
-                            <td>10.</td>
-                            <td>Satisfactory</td>
-                            <td>Coffee Stain Studios</td>
-                            <td><meter min="0" max="10" value="9.6" low = "5" optimum = "8">9.6 din 10</meter></td>
-                            <td>39&euro;</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="5">Și multe altele, descoperă-le în oferta completă!</td>
-                        </tr>
-                    </tfoot>
-                </table>
+                <h2>Cele mai populare jocuri</h2>
+                <div id="container-tab-showcase">
+                    <table id="tab-showcase">
+                        <caption>Jocurile care se vând ca pâinea caldă!</caption>
+                        <thead>
+                            <tr>
+                                <th>Index</th>
+                                <th>Titlu</th>
+                                <th><i>Developer/Publisher</i></th>
+                                <th>Scor</th>
+                                <th>Preț</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1.</td>
+                                <td>Counter-Strike 2</td>
+                                <td>Valve</td>
+                                <td><meter min="0" max="10" value="8.5" low = "5" optimum = "8">8.5 din 10</meter></td>
+                                <td>13&euro;</td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>Slay the Spire 2</td>
+                                <td>Mega Crit</td>
+                                <td><meter min="0" max="10" value="9.7" low = "5" optimum = "8">9.7 din 10</meter></td>
+                                <td>23&euro;</td>
+                            </tr>
+                            <tr>
+                                <td>3.</td>
+                                <td>ARC Raiders</td>
+                                <td>Embark Studios</td>
+                                <td><meter min="0" max="10" value="8" low = "5" optimum = "8">8 din 10</meter></td>
+                                <td rowspan="2" class="span-mare">40&euro;</td>
+                            </tr>
+                            <tr>
+                                <td>4.</td>
+                                <td>Rust</td>
+                                <td>Facepunch Studios</td>
+                                <td><meter min="0" max="10" value="8.6" low = "5" optimum = "8">8.6 din 10</meter></td>
+                            </tr>
+                            <tr>
+                                <td>5.</td>
+                                <td>Resident Evil Requiem</td>
+                                <td>Capcom</td>
+                                <td><meter min="0" max="10" value="9.6" low = "5" optimum = "8">9.6 din 10</meter></td>
+                                <td>70&euro;</td>
+                            </tr>
+                            <tr>
+                                <td>6.</td>
+                                <td>Marathon</td>
+                                <td>Bungie</td>
+                                <td><meter min="0" max="10" value="9" low = "5" optimum = "8">9 din 10</meter></td>
+                                <td>40&euro;</td>
+                            </tr>
+                            <tr>
+                                <td>7.</td>
+                                <td>EA SPORTS FC 26</td>
+                                <td>EA Romania</td>
+                                <td><meter min="0" max="10" value="4.7" low = "5" optimum = "8">4.7 din 10</meter></td>
+                                <td>70&euro;</td>
+                            </tr>
+                            <tr>
+                                <td>8.</td>
+                                <td>Grand Theft Auto V</td>
+                                <td>Rockstar North</td>
+                                <td><meter min="0" max="10" value="7.8" low = "5" optimum = "8">7.8 din 10</meter></td>
+                                <td>30&euro;</td>
+                            </tr>
+                            <tr>
+                                <td>9.</td>
+                                <td>Mewgenics</td>
+                                <td>Edmund McMillen, Tyler Glaiel</td>
+                                <td><meter min="0" max="10" value="9.1" low = "5" optimum = "8">9.1 din 10</meter></td>
+                                <td>29&euro;</td>
+                            </tr>
+                            <tr>
+                                <td>10.</td>
+                                <td>Satisfactory</td>
+                                <td>Coffee Stain Studios</td>
+                                <td><meter min="0" max="10" value="9.6" low = "5" optimum = "8">9.6 din 10</meter></td>
+                                <td>39&euro;</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="5">Și multe altele, descoperă-le în oferta completă!</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                
             </section>
-            <figure id="fig1" class="fg-img">
+            <!--figure id="fig1" class="fg-img">
                 <img src="resurse/imagini/favicon/favicon-96x96.png" alt="logo">
                 <figcaption>logo</figcaption>
             </figure>
@@ -296,13 +301,14 @@
             <figure id="fig3" class="fg-img">
                 <img src="resurse/imagini/favicon/favicon-96x96.png" alt="logo">
                 <figcaption>logo</figcaption>
-            </figure>
+            </figure-->
             <section id="anunturi">
                 <h2>Anunțuri</h2>
                 <p><time datetime="2026-02-27">27 februarie 2026</time>: <b>Înființare</b> - a luat naștere acest site.
                 </p>
                 <p><time datetime="2026-03-02">2 martie 2026</time>: <b>Modificări majore</b> - am adăugat css.</p>
                 <p><time datetime="2026-03-08">8 martie 2026</time>: <b>Finalizare etapa 1</b> - am mai modificat și adăugat cerințe lipsă, bonusuri.</p>
+                <p><time datetime="2026-03-16">16 martie 2026</time>: <b>Progres major etapa 2</b> - am terminat, în mare parte, cerințele individuale.</p>
             </section>
             <section id="index-intrebari">
                 <h2>Întrebări frecvente</h2>
@@ -338,30 +344,25 @@
 
             </section>
 
-        </div>
-        <section id="trailere">
+            <section id="trailere">
             <h2>Trailere</h2>
             <p>Câteva trailere pentru cele mai bune jocuri de pe piață!</p>
             <div class="container-iframe">
                 <div class="taburi-iframe">
-                    <a href="https://www.youtube.com/embed/DMXWKpZH7pw" target="ifr-video">The Day Before -
-                        Trailer</a>
-                    <a href="https://www.youtube.com/embed/rh6Pi6h_css" target="ifr-video">Highguard -
-                        Trailer</a>
-                    <a href="https://www.youtube.com/embed/mBnStS9d2xg" target="ifr-video">Concord -
-                        Trailer</a><br />
+                    <a href="https://www.youtube.com/embed/DMXWKpZH7pw" target="ifr-video" id="link-stanga">
+                        <div>The Day Before - Trailer</div>
+                    </a>
+                    <a href="https://www.youtube.com/embed/rh6Pi6h_css" target="ifr-video">
+                        <div>Highguard - Trailer</div>
+                    </a>
+                    <a href="https://www.youtube.com/embed/mBnStS9d2xg" target="ifr-video" id="link-dreapta">
+                        <div>Concord - Trailer</div>
+                    </a>
                 </div>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/DMXWKpZH7pw" name="ifr-video"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <p>Bine, și acum pe bune cele mai șmechere trailere.</p>
-            <div class="container-iframe">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed?listType=playlist&list=PLnxaxk1JJXBDmtblIj8eEGFSfVSPpwK7A" name="ifr-video"
-                    title="YouTube playlist player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="trailer-ifr"></iframe>
             </div>
         </section>
         <section id="profil">
@@ -377,10 +378,9 @@
                 <p class="intro">Aici vei putea să vezi statisticile rezultate în urma folosirii acestui site web, precum grafice cu <wbr>
                 sumele cheltuite în funcție de lună, subtotaluri pe perioade determinate, etc.</p>
 
-                <p>De exemplu, se vor afișa rezultatele următoarelor formule:</p>
-                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                    <mtext>Total cheltuit:</mtext>
-                    <mspace width="0.5em" />
+                <!--p>De exemplu, se vor afișa rezultatele următoarelor formule:</p>
+                <p>Total cheltuit:</p-->
+                <!--math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
                     <mrow>
                         <mi>t</mi><mo>=</mo>
                         <mrow>
@@ -418,7 +418,7 @@
                                 <mi>C</mi>
                                 <mrow><mi>n</mi></mrow>
                                 </msub>
-                            <mo>}</mo>
+                            <mo linebreak='newline' linebreakstyle='after'>}</mo>
                         </mrow>
                     </mrow>
                     <mspace width="0.5em"/>
@@ -429,9 +429,9 @@
                         <mo>=</mo>
                         <ms>numărul de articole cumpărate.</ms>
                     </mrow>
-                </math>
+                </math-->
                 <!-- nu merge <mspace linebreak="newline"/>, asa ca fac <math> separat pentru o noua formula-->
-                <br>
+                <!--br>
                 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
                     <mtext>Cost mediu:</mtext>
                     <mspace width="0.5em" />
@@ -498,7 +498,7 @@
                         <mo>=</mo>
                         <ms>numărul de articole cumpărate.</ms>
                     </mrow>
-                </math>
+                </math-->
             </article>
 
             <article id="tranzactii-profil">
@@ -506,6 +506,21 @@
                 <p class="intro">Tranzacțiile efectuate de-a lungul timpului.</p>
             </article>  
         </section>
+
+        <section id="activitate">
+            <h2>Activitate</h2>
+            <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+
+        <section id="statistici-site">
+            <h2>Statistici site</h2>
+            <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+
+        </div>
+
+        
+        
         <section id="wishlist">
             <h2>Wishlist</h2>
 
@@ -525,7 +540,7 @@
 
     </main>
     <footer>
-        <a href="#" title="mergi sus" id="link-top">Link SUS</a> <i class="fa-brands fa-42-group"></i>
+        <a href="#" title="mergi sus" id="link-top"><div id="sageata-link-top">&#129081;</div></a>
         <address>
             <br>
             <a href="tel:+40711234567">Sună la +40711234567</a>

@@ -47,7 +47,7 @@ ul.meniu ul {
 
 ul.meniu li:hover ul {
     display: block;
-    animation: animatie_submeniu 277ms linear;
+    animation: animatie_submeniu 300ms linear;
     transform-origin: center top;
 }
 

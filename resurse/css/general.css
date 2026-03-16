@@ -13,6 +13,10 @@ body {
     --culoare-buton-wishlist: #8084FF;
     --culoare-buton-wishlist-hover: #80ACFF;
 
+    --culoare-border-tabel-parimpar: #80FDFF;
+    --culoare-border-tabel-imparpar: #80FFD6;
+    --culoare-outline-rand-tabel: 128, 132, 255;
+
     --margine-pagina: 100px;
 
     --latime-buton: 100px;
@@ -24,6 +28,11 @@ body {
 
     background-color: var(--culoare-fundal);
     color: var(--culoare-text);
+}
+
+main {
+    margin-left: var(--margine-pagina);
+    margin-right: var(--margine-pagina);
 }
 
 a {
@@ -76,23 +85,18 @@ a:hover {
     background-color: var(--culoare-buton-adaugare-cos-hover);
 }   
 
-main {
-    margin-left: var(--margine-pagina);
-    margin-right: var(--margine-pagina);
-}
+
 
 #grid-pagina {
     display: grid;
     gap: 10px;
     grid-template-columns: 2fr 1fr 2fr;
     grid-template-areas: "welcome welcome welcome"
-                        "promotii promotii anunturi"
-                        "fig1 showcase showcase"
-                        "fig2 showcase showcase"
-                        "fig3 showcase showcase"
-                        "produse produse produse"
-                        "index-intrebari index-intrebari index-intrebari";
-
+                        "showcase showcase calendar-promotii"
+                        "showcase showcase anunturi"
+                        "activitate profil statistici-site"
+                        "trailere trailere index-intrebari"
+                        "produse produse produse";
 }
 
 #grid-pagina > * {
@@ -153,54 +157,55 @@ figure > picture {
 #trailere{
     grid-area: trailere;
 }
-
-.taburi-iframe > a {
-    display: inline-block;
-    padding: 10px;
-    background-color: var(--culoare-fundal);
-    border: 1px solid var(--culoare-contur);
-    color: black;
-    text-decoration: none;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    transition: all 250ms;
+#calendar-promotii{
+    grid-area: calendar-promotii;
+}
+#activitate{
+    grid-area: activitate;
+}
+#statistici-site{
+    grid-area: statistici-site;
+}
+#profil {
+    grid-area: profil;
 }
 
-.container-iframe {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
+#link-top {
+    --dimensiune-sageata: 3.5rem;
 
-.taburi-iframe {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    align-items: stretch;
-}
-
-.taburi-iframe > a:hover {
-    background-color: var(--culoare-contur);
-    color: white;
-}
-
-#tab-showcase {
-    border-collapse:collapse;
-}
-
-#tab-showcase td, th{
-    border: 1px solid black;
+    position: fixed;
+    bottom: 0.5em;
+    opacity: 0.5;
+    right: 0.5em;
+    width: 3rem;
+    box-sizing: border-box;
+    height: 3rem;
+    line-height: var(--dimensiune-sageata);
     text-align: center;
-    padding: 5px;
+    border: 1px solid var(--culoare-contur-card);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background: var(--culoare-card);
+
+    box-shadow: inset 0px 0px 12px var(--culoare-contur-card);
+
+    transition: all 300ms linear;
 }
 
-/*culori alternate*/
-#tab-showcase tbody tr:nth-child(even) {
-    background-color: lightgoldenrodyellow;
+#link-top:hover {
+    opacity: 1;
+    background: var(--culoare-contur);
 }
 
-#tab-showcase .span-mare {
-    background-color: blueviolet;
+#sageata-link-top {
+    font-size: var(--dimensiune-sageata);
+    color: var(--culoare-contur-card);
+
+    transition: all 300ms linear;
+}
+
+#sageata-link-top:hover {
+    font-size: calc(var(--dimensiune-sageata) * 1.2);
 }
 
 
@@ -220,8 +225,7 @@ figure > picture {
                         "fig3 showcase"
                         "produse produse"
                         "index-intrebari index-intrebari";
-
-}
+    }
 }
 
 @media  screen and (max-width:700px) {
