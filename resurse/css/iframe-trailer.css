@@ -14,7 +14,7 @@
     align-items: center;
 }
 
-#trailer-ifr {
+#trailer-ifr, #playlist-ifr {
     border: var(--dimensiune-border-video) solid var(--culoare-contur);
     width: 100%;
     height: min(40vw, 70vh);
