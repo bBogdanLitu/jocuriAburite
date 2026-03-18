@@ -23,14 +23,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <nav>
             <ul class="meniu">
-                <li>Magazin
+                <li>Magazin <i class="fa-solid fa-shop"></i>
                     <ul>
                         <li><a href="#welcome">Welcome</a></li>
                         <li><a href="#promotii">Promotii</a></li>
@@ -56,15 +56,11 @@
                 </li>
             </ul>
         </nav>
-        <h1 class="ephesis">Jocuri Aburite</h1>
-        <img src="./resurse/imagini/map.png" alt="Mapa Navigare" usemap="#map-navigare" width="640" height="640"/>
-
-        <!--coordonatele din area stabilite cu ajutorul GIMP. imagine luata de pe pixabay-->
-        <map name="map-navigare">
-            <area shape="rect" coords="135,170,500,365" href="#promotii" alt="area produse">
-            <area shape="rect" coords="450,440,615,500" href="#statistici-profil" alt="area statistici">
-            <area shape="rect" coords="40,365,145,500" href="#continut-cos" alt="area cos">
-        </map>
+        <h1 class="bitcount-grid-double-ink" id="titlu-welcome">
+            <i class="fa-solid fa-bars-staggered" id="stanga"></i>
+            Jocuri Aburite
+            <i class="fa-solid fa-bars-staggered" id="dreapta"></i>
+        </h1>
         
     </header>
     <main> <!--  comentariu -->
@@ -77,17 +73,8 @@
 
                 <p class="intro">
                     Aici găsiți cele mai bune oferte la jocuri, DLC-uri și conturi cu jocuri!<br>
-                    Poate vă întrebați: la ce îmi folosesc aceste oferte la jocuri? De ce m-aș juca? Avem răspunsul!
                 </p>
-        
-                <object data="./resurse/pdf/Benefits-of-Gaming.pdf" type="application/pdf" width="500" height="400" title="Beneficiile jocurilor">
-                    <p>
-                        Browser-ul tău nu poate afișa obiecte de tip pdf! Descarcă-l mai jos.<br>
-                    </p>
-                </object>
-                <br>
-                <a href="./resurse/pdf/Benefits-of-Gaming.pdf" download="Beneficiile_jocurilor.pdf">Descarcă PDF cu beneficiile jocurilor</a>
-                <br>
+
                 <div class="intro-oferte">
                     <div>Jocuri populare</div>
                     <div>Jocuri de strategie</div>
@@ -107,11 +94,10 @@
                 </div>
                 <p class="anunt intro">Vă puteți bucura de jocurile dumneavoastră de îndată ce ați finalizat tranzacția.
                 </p>
-                <div id="dv-prezentare-1">
+                <!--div id="dv-prezentare-1">
                     <div id="dv-prezentare">
                         <figure>
                             <picture title="Imagine discount">
-                                <!-- il ia pe primul care se potriveste cu query-ul din media-->
                                 <source srcset="./resurse/imagini/discount-150x150.jpg" media="(max-width:700px)" />
                                 <source srcset="./resurse/imagini/discount-330x330.jpg" media="(max-width:1200px)" />
                                 <img src="./resurse/imagini/discount-640x640.jpg" alt="Discount cu zaruri 3D" />
@@ -119,7 +105,18 @@
                             <figcaption>Discount</figcaption>
                         </figure>
                     </div>
-                </div>
+                </div-->
+                <p id="beneficii">
+                    Poate vă întrebați: la ce îmi folosesc aceste oferte la jocuri? De ce m-aș juca? Avem răspunsul!
+                </p>
+                <object data="./resurse/pdf/Benefits-of-Gaming.pdf" type="application/pdf" width="500" height="400" title="Beneficiile jocurilor" id="pdf-beneficii">
+                    <p>
+                        Browser-ul tău nu poate afișa obiecte de tip pdf! Descarcă-l mai jos.<br>
+                    </p>
+                </object>
+                <a href="./resurse/pdf/Benefits-of-Gaming.pdf" download="Beneficiile_jocurilor.pdf" id="pdf-download">Descarcă PDF cu beneficiile jocurilor</a>
+
+
             </section>
             <section id="calendar-promotii"> <!--  este integrat -->
                 <h2>Promoții și oferte de neratat</h2>
@@ -544,7 +541,13 @@
                 <p class="intro">Totalul, metodele de plată, punctul în care trebuie să îți cântărești deciziile.</p>
             </article>
         </section>
-
+        <!--coordonatele din area stabilite cu ajutorul GIMP. imagine luata de pe pixabay-->
+        <map name="map-navigare">
+            <area shape="rect" coords="135,170,500,365" href="#calendar-promotii" alt="area produse">
+            <area shape="rect" coords="450,440,615,500" href="#statistici-profil" alt="area statistici">
+            <area shape="rect" coords="40,365,145,500" href="#continut-cos" alt="area cos">
+        </map>
+        <img src="./resurse/imagini/map.png" alt="Mapa Navigare" usemap="#map-navigare" width="640" height="640" id="map-area"/>
     </main>
     <footer>
         <a href="#" title="mergi sus" id="link-top"><div id="sageata-link-top">&#129081;</div></a>

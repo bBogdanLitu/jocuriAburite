@@ -1,0 +1,124 @@
+{
+	"files": [
+		{
+			"path": "index.html",
+			"bookmarks": [
+				{
+					"line": 5,
+					"column": 0,
+					"label": "2"
+				},
+				{
+					"line": 67,
+					"column": 0,
+					"label": "7"
+				},
+				{
+					"line": 75,
+					"column": 0,
+					"label": "bonus-pdf"
+				},
+				{
+					"line": 76,
+					"column": 0,
+					"label": "13e"
+				},
+				{
+					"line": 99,
+					"column": 0,
+					"label": "11"
+				},
+				{
+					"line": 122,
+					"column": 0,
+					"label": "13d"
+				},
+				{
+					"line": 132,
+					"column": 0,
+					"label": "6"
+				},
+				{
+					"line": 134,
+					"column": 0,
+					"label": "12e"
+				},
+				{
+					"line": 136,
+					"column": 0,
+					"label": "12f"
+				},
+				{
+					"line": 169,
+					"column": 0,
+					"label": "9"
+				},
+				{
+					"line": 170,
+					"column": 0,
+					"label": "12h"
+				},
+				{
+					"line": 301,
+					"column": 0,
+					"label": "10"
+				},
+				{
+					"line": 309,
+					"column": 0,
+					"label": "16"
+				},
+				{
+					"line": 326,
+					"column": 0,
+					"label": "13a"
+				},
+				{
+					"line": 332,
+					"column": 0,
+					"label": "13b"
+				},
+				{
+					"line": 549,
+					"column": 0,
+					"label": "map-area"
+				},
+				{
+					"line": 553,
+					"column": 0,
+					"label": "13c"
+				},
+				{
+					"line": 554,
+					"column": 0,
+					"label": "18"
+				},
+				{
+					"line": 557,
+					"column": 0,
+					"label": "bonus-iframeMaps"
+				},
+				{
+					"line": 569,
+					"column": 0,
+					"label": "19"
+				}
+			]
+		},
+		{
+			"path": "resurse/css/general.css",
+			"bookmarks": [
+				{
+					"line": 263,
+					"column": 0,
+					"label": "et2 - link-top"
+				},
+				{
+					"line": 310,
+					"column": 0,
+					"label": "et2 b"
+				}
+			]
+		}
+	]
+}
